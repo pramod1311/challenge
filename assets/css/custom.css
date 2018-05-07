@@ -516,9 +516,10 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   z-index: 1;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 98.75vw;
   height: 100vh;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .slideshow .slider {
@@ -625,7 +626,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   transform: translate(-50%, -50%);
   z-index: 100;
   font-size: 80px;
-  width: 100vw;
+  width: 98.5vw;
   text-align: center;
   color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
@@ -926,7 +927,25 @@ screen and (min-width: 40em) {
   font-family: 'Roboto Condensed', sans-serif;
 
 }
-
+.card-challenge-details p{
+  margin-bottom: 0;
+}
+.challenge-activity-wrapper ul{
+  margin-left: 0;
+  text-align: center;
+}
+.challenge-activity-wrapper ul li{
+  padding: 10px;
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+}
+.challenge-activity-wrapper ul li strong{
+  padding-left: 5px;
+}
+.challenge-activity-wrapper ul li a{
+  color: #000;
+}
 .card-challenge-title {
   font-size: 1.4rem;
   margin-bottom: 0.2rem;
@@ -1078,7 +1097,7 @@ screen and (min-width: 40em) {
 }
 
 .status-update-input-box .user-action-container .user-action-box {
-  padding: 0;
+  padding: 2px;
   border: 1px solid #cacaca;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1152,4 +1171,94 @@ screen and (min-width: 40em) {
 
 .reveal{
   transition: 0.5s;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+/*---------Create challenge popup-------*/
+
+.create-challenge-wrapper{
+  background-color: #FFF;
+  padding: 15px 0;
+  margin: 30px auto;
+}
+.create-challenge-wrapper ul li .link-wrapper:hover{
+  transform: translate3d(0, -10px, 1px);
+  border: transparent;
+  transition: 0.5s;
+}
+.create-challenge-wrapper a{
+  padding: 15px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #F44336;
+}
+
+.hvr-bounce-in:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, .31, -.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, .31, -.36);
+}
+
+.hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.create-challenge-wrapper .b-r{
+  border-right: 1px solid #ccc;
+}
+.create-challenge-wrapper .p-a-15{
+  padding: 30px 15px;
+}
+.challenge-popup-title h4 {
+  width:100%;
+  text-align:center;
+  border-bottom: 1px solid #ccc;
+  line-height:0.1em;
+  margin:10px 0 20px;
+}
+
+.challenge-popup-title h4 span {
+  background:#fff;
+  padding:0 10px;
+}
+
+.youtube-vlink ul{
+  margin: 0;
+}
+
+.youtube-vlink ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.youtube-vlink ul li:first-child{
+  padding-left: 10px;
+  color: #14679e;
+  font-size: 18px;
+}
+.youtube-vlink ul li .form-control{
+  margin-bottom: 0;
+}
+
+.new-story-wrapper .add-image,
+.new-story-wrapper .add-image i,
+.youtube-video-embed{
+    color: #14679e !important;
+    cursor: pointer;
+    border-bottom: transparent !important;
+}
+
+.new-story-wrapper input[type="file"] {
+    display: none;
 }

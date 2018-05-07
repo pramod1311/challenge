@@ -83,14 +83,16 @@ $(document).ready(function() {
             $('.slideshow-right .slider').slick('slickGoTo', maxItems - 1 - nextSlide);
             $('.slideshow-text').slick('slickGoTo', nextSlide);
         }
-    }).on("mousewheel", function(event) {
-        event.preventDefault();
-        if (event.deltaX > 0 || event.deltaY < 0) {
-            $(this).slick('slickNext');
-        } else if (event.deltaX < 0 || event.deltaY > 0) {
-            $(this).slick('slickPrev');
-        };
-    }).on('mousedown touchstart', function() {
+    })
+    // .on("mousewheel", function(event) {
+    //     event.preventDefault();
+    //     if (event.deltaX > 0 || event.deltaY < 0) {
+    //         $(this).slick('slickNext');
+    //     } else if (event.deltaX < 0 || event.deltaY > 0) {
+    //         $(this).slick('slickPrev');
+    //     };
+    // })
+    .on('mousedown touchstart', function() {
         dragging = true;
         tracking = $('.slick-track', $slider).css('transform');
         tracking = parseInt(tracking.split(',')[5]);
