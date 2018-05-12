@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="assets/js/include-file.js"></script>
   </head>
   <body>
+    <div w3-include-html="common.html"></div>
     <!-- header -->
     <div class="top-bar foundation-5-top-bar hover-underline-menu" data-menu-underline-from-center>
       <div class="top-bar-title">
@@ -26,7 +28,7 @@
       <div class="top-bar-left">
         <ul class="menu">
           <li><a href="javascript:;" data-open="createChallengePopup">Create Challenge</a></li>
-          <li><a href="javascript:;" data-open="exampleModal1">Story</a></li>
+          <li><a href="story.html" onclick="window.location.href=this">Story</a></li>
         </ul>
       </div>
       <div id="responsive-menu">
@@ -187,62 +189,7 @@
             </div>
             <div class="tabs-panel" id="panel3c">
               <div class="grid-x">
-                <div>
-                  <p><button class="button" data-open="exampleModal1">Write a Story</button></p>
-                  <div class="reveal small" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-                    <div class="new-story-wrapper">
-                      <div class="status-update-input-box">
-                        <form>
-                          <div class="row input-box-container">
-                            <div>
-                              <label> <!-- Add a Label here to give this input box a heading -->
-                              <textarea rows="5" placeholder="Hey Harry, What's on your mind?"></textarea>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="row medium-collapse user-action-container">
-                          <div class="small-12 medium-8 columns">
-                            <div class="user-action-box">
-                              <div class="action-area">
-                                <div class="form-group field text-center">
-                                      <label class="add-image"> <i class="fa fa-picture-o bottom" aria-hidden="true" data-tooltip aria-haspopup="true" tabindex="2" title="Upload a Image"></i>
-                                      <input type="file" id="File" size="60" >
-                                      </label>
-                                    </div>
-                              </div>
-                              <div class="action-area">
-                                <div class="form-group field text-center">
-                                      <label class="add-image"> <i class="fa fa-video-camera bottom" aria-hidden="true" data-tooltip aria-haspopup="true" tabindex="2" title="Upload a Video"></i>
-                                      <input type="file" id="File" size="60" >
-                                      </label>
-                                    </div>
-                              </div>
-                              <div class="youtube-vlink">
-                                <ul>
-                                  <li>
-                                    <i class="fa fa-youtube bottom youtube-video-embed" aria-hidden="true" aria-hidden="true" data-tooltip aria-haspopup="true" tabindex="2" title="Embed YouTube Video"></i>
-                                  </li>
-                                  <li>
-                                    <div class="form-group field">
-                                      <input placeholder="Embed YouTube Link" type="text" value="" name="user[email]" id="user_email" class="form-control">
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="small-12 medium-4 columns">
-                            <div class="user-submit-box">
-                              <input type="submit" class="button small" value="POST">
-                              <a href="javascript:void(0);" class="button popupclose-wrapper" data-close aria-label="Close modal">Cancel</a>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  <p><a href="story.html" onclick="window.location.href=this">Explore</a></p>
             </div>
           </div>
           <div class="tabs-panel" id="panel4c">
@@ -307,43 +254,6 @@
       </div>
     </div>
   </div>
-  <!-- Popup For create challenge -->
-  <div class="challenge-popup-container">
-    <div class="small reveal" id="createChallengePopup" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
-      <div class="create-challenge-wrapper">
-        <div class="grid-x text-center">
-          <div class="cell small-6 large-6 medium-6 b-r p-a-15">
-            <div class="hvr-bounce-in">
-              <a href="javascript:;"><img src="assets/image/world.png" alt="">
-                <p>Challenge the World</p></a>
-              </div>
-            </div>
-            <div class="cell small-6 large-6 medium-6 clearfix p-a-15">
-              <div class="hvr-bounce-in">
-                <a href="javascript:;"><img src="assets/image/self.png" alt="">
-                  <p>Challenge Yourself</p></a>
-                </div>
-              </div>
-              <div class="cell small-12 large-12 medium-12 p-a-15">
-                <div class="challenge-popup-title text-center clearfix">
-                  <h4 class="text-center"><span>Your Next Adventure Awaits</span></h4>
-                </div>
-              </div>
-              <div class="cell small-6 large-6 medium-6 b-r p-a-15">
-                <div class="hvr-bounce-in">
-                  <a href="javascript:;"><img src="assets/image/friend.png" alt="">
-                    <p>Challenge Friends</p></a>
-                  </div>
-                </div>
-                <div class="cell small-6 large-6 medium-6 p-a-15">
-                  <div class="hvr-bounce-in">
-                    <a href="javascript:;"><img src="assets/image/group-challenge.png" alt=""><p>Challenge Group</p></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- footer -->
         <footer class="marketing-site-footer">
           <div class="row medium-unstack">
@@ -422,5 +332,8 @@
         <script src="assets/js/app.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script>
+            includeHTML();
+          </script>
       </body>
     </html>

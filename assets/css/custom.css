@@ -339,7 +339,9 @@ a:active{
 .m-t-30 {
   margin-top: 30px;
 }
-
+.m-t-15{
+  margin-top: 15px;
+}
 .m-b-30 {
   margin-bottom: 30px;
 }
@@ -1097,11 +1099,14 @@ screen and (min-width: 40em) {
 }
 
 .status-update-input-box .user-action-container .user-action-box {
-  padding: 2px;
+  padding: 1px 1px 2px 1px;
   border: 1px solid #cacaca;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+.status-update-input-box .user-action-container .user-action-box i{
+  font-size: 24px;
 }
 
 .status-update-input-box .user-action-container .user-action-box .action-area {
@@ -1137,6 +1142,7 @@ screen and (min-width: 40em) {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding: 5px 5px 4px 5px;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -1261,4 +1267,20 @@ screen and (min-width: 40em) {
 
 .new-story-wrapper input[type="file"] {
     display: none;
+}
+
+
+/*----------Create new challenge form------*/
+
+.create-new-challenge-wrapper{
+    box-shadow: 0 0 10px #dcdcdc;
+    padding: 35px;
+}
+.red-error-class{
+  color: #F44336;
+}
+.youtube-video-embed{
+  font-size: 30px;
+  padding-left: 15px;
+  color: #F44336 !important;
 }
