@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/foundation.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="assets/js/include-file.js"></script>
+  </head>
+  <body>
+    <div w3-include-html="common.html"></div>
+    <!-- header -->
+    <div class="top-bar foundation-5-top-bar hover-underline-menu" data-menu-underline-from-center>
+      <div class="top-bar-title">
+        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+        </span>
+        <span class="logo"><img src="assets/image/logo11.png" alt="">Challenge Accepted</span>
+      </div>
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a href="javascript:;" data-open="createChallengePopup">Create Challenge</a></li>
+          <li><a href="story.html" onclick="window.location.href=this">Story</a></li>
+        </ul>
+      </div>
+      <div id="responsive-menu">
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><a href="index.html" onclick="window.location.href=this">Home</a></li>
+            <li><a href="login.html" onclick="window.location.href=this">Login</a></li>
+            <li><a href="register.html" onclick="window.location.href=this">Register</a></li>
+            <li><a href="explore.html" onclick="window.location.href=this">Explore</a></li>
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button topbar-search-btn"><i class="fa fa-search" aria-hidden="true"></i></button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="grid-x m-b-30">
+      <div class="small-12 explore-container">
+        <div class="small-12 large-9 medium-9 column">
+          <div class="create-new-challenge-wrapper m-t-30">
+            <h3>Create Group Challenge</h3>
+            <form class="new_user" data-abide="" action="" accept-charset="UTF-8" method="post">
+              <div class="form-group field m-t-30">
+                <label>Challenge Title</label>
+                <input autofocus="autofocus" placeholder="Challenge Title" required="required" type="text" value="" name="challengetitle" id="challenge_title" class="form-control">
+              </div>
+              <div class="form-group field m-t-30">
+                <label>Challenge Discription</label>
+                <input autofocus="autofocus" placeholder="Challenge Discription" required="required" type="text" value="" name="challengediscription" id="challenge_discription" class="form-control">
+              </div>
+              <p class="red-error-class m-t-30">Either upload image or video</p>
+              <div class="form-group field m-t-30">
+                <label class="m-b-15">Upload Image or Video</label>
+                <input autofocus="autofocus" required="required" type="file" value="" name="challengediscription" id="challenge_discription">
+              </div>
+              <div class="actions">
+                <input type="submit" name="createnewchallenge" value="Create New Challenge" class="button" data-disable-with="Sign up">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="small-12 large-3 medium-3 column">
+          <div class="box-shadow clearfix m-t-30">
+            <h4>How to create a challenge</h4>
+            <ul>
+              <li><p>Give a kick-ass title</p></li>
+              <li><p>Pitch your challenge</p></li>
+              <li><p>Give challenge duration</p></li>
+              <li><p>Provide supporting information (image or video or embed videos)</p></li>
+            </ul>
+          </div>
+          <div class="box-shadow clearfix m-t-30">
+            <h4>Rules</h4>
+            <ul>
+              <li><p>Challenges must be related to sports</p></li>
+              <li><p>Irrelevant challenges will be removed</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="marketing-site-footer">
+      <div class="row medium-unstack">
+        <div class="medium-4 columns">
+          <h2 class="challenge-title">challenge accepted</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem accusantium architecto id quidem and, itaque nesciunt quam ducimus atque.</p>
+          <ul class="menu marketing-site-footer-menu-social simple">
+            <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="medium-4 columns">
+          <h4 class="marketing-site-footer-title">Contact Info</h4>
+          <div class="marketing-site-footer-block">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>100 W Rincon<br>San Francisco, CA 94015</p>
+          </div>
+          <div class="marketing-site-footer-block">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>1 (800) 555-5555</p>
+          </div>
+          <div class="marketing-site-footer-block">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <p>yetirules@fakeemail.com</p>
+          </div>
+        </div>
+        <div class="medium-4 columns">
+          <h4 class="marketing-site-footer-title">Instagram</h4>
+          <div class="row small-up-3">
+            <div class="column column-block">
+              <img src="https://placehold.it/75" alt="" />
+            </div>
+            <div class="column column-block">
+              <img src="https://placehold.it/75" alt="" />
+            </div>
+            <div class="column column-block">
+              <img src="https://placehold.it/75" alt="" />
+            </div>
+            <div class="column column-block">
+              <img src="https://placehold.it/75" alt="" />
+            </div>
+            <div class="column column-block">
+              <img src="https://placehold.it/75" alt="" />
+            </div>
+            <div class="column column-block">
+              <img src="https://placehold.it/75" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-site-footer-bottom">
+        <div class="row large-unstack align-middle">
+          <div class="column">
+            <p>&copy; 2017 No rights reserved</p>
+          </div>
+          <div class="column">
+            <ul class="menu marketing-site-footer-bottom-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- slider close -->
+    <!-- slider close -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/vendor/motion-ui.min.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+    includeHTML();
+    </script>
+  </body>
+</html>
