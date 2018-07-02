@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Challenge Accepted</title>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link href="css/animate.css" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="css/mdb.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/responsive.css" rel="stylesheet">
+      <script src="js/modernizr-2.6.2.min.js"></script>
+   </head>
+   <body>
+      <div id="header">
+         <div w3-include-html="commonheader.html"></div>
+      </div>
+      <div id="fullpage">
+         <div class="section" id="section2">
+            <div class="main-container">
+               <div class="container-fluid m-t-50">
+                  <div class="row">
+                     <div class="col-12 col-md-12 col-sm-12 col-lg-9 home-ch-card">
+                        <div class="challenge-forms-wrappers">
+                           <div class="col-12 col-md-10 col-sm-12 col-lg-8 offset-md-1 offset-lg-2 card p-a-30">
+                              <div>
+                              <h3 class="p-t-30 theme-c">Create New Challenge for World</h3>
+                              <form role="form" id="worldcj-form">
+                                 <div class="form-group md-form">
+                                    <label for="title">Title</label>
+                                    <input type="text" value="" id="title" class="form-control">
+                                 </div>
+                                 <div class="md-form">
+                                    <textarea type="text" id="form7" class="md-textarea form-control" rows="3"></textarea>
+                                    <label for="form7">Description</label>
+                                 </div>
+
+                                 <div class="md-form">
+                                    <div class="file-field">
+                                       <div class="btn btn-danger btn-sm float-left">
+                                          <span>Choose Image</span>
+                                          <input type="file">
+                                       </div>
+                                       <div class="file-path-wrapper">
+                                          <input class="file-path validate" type="text" placeholder="Choose Image">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="md-form">
+                                    <div class="file-field">
+                                       <div class="btn btn-danger btn-sm float-left">
+                                          <span>Choose video</span>
+                                          <input type="file">
+                                       </div>
+                                       <div class="file-path-wrapper">
+                                          <input class="file-path validate" type="text" placeholder="Choose video">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="form-group md-form">
+                                    <label for="youtube">Youtube Link</label>
+                                    <input type="text" value="" id="link" class="form-control">
+                                 </div>
+
+                                 <button class="btn btn-danger waves-effect waves-light w-md" type="submit">Create Challenge</button>
+                                 <button class="btn btn-primary waves-effect waves-light w-md" type="submit">Back</button>
+                              </form>
+                           </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-12 col-sm-12 col-lg-3">
+                        <div class="wow fadeInUp text-center m-b-30">
+                           <a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#create-challenge">Create Challenge</a>
+                        </div>
+                        <div w3-include-html="commonsidebar.html"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer class="footer-bs4 text-light px-4 py-5 mb-0">
+            <div w3-include-html="commonfooter.html"></div>
+         </footer>
+      </div>
+      <!-- popup -->
+      <div w3-include-html="commonpopup.html"></div>
+      <!-- SCRIPTS -->
+      <!-- JQuery -->
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Custom -->
+      <script type="text/javascript" src="js/custom.js"></script>
+      <script>
+      includeHTML();
+      </script>
+   </body>
+</html>
